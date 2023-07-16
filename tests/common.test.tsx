@@ -7,6 +7,6 @@ import { ReactExpander } from "../src"
 
 describe("Common render", () => {
   it("renders without crashing", () => {
-    render(<ReactExpander />)
+    render(<ReactExpander height={200}>bla bla</ReactExpander>)
   })
 })

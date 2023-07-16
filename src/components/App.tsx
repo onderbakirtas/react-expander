@@ -1,5 +1,4 @@
 import React, { useState } from "react"
-import "../styles.css"
 
 type Props = {
   height: number
@@ -20,7 +19,7 @@ const ReactExpander = ({ height, children }: Props) => {
   }, [isExpanded, predefinedHeight])
 
   return (
-    <div className="react-expander" style={{ height: `${visibleHeight}px` }}>
+    <div style={{ height: `${visibleHeight}px` }}>
       {children}
       <button onClick={() => setIsExpanded(!isExpanded)}>{isExpanded ? "Less" : "More"}</button>
     </div>
